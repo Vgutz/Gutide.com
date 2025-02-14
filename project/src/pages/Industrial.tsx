@@ -115,10 +115,7 @@ const Industrial = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{study.title}</h3>
                   <p className="text-gray-600 mb-4">{study.description}</p>
-                  <Link
-                    to={`/case-studies/${study.id}`}
-                    className="inline-flex items-center text-blue-600 hover:text-blue-700"
-                  >
+                  <Link to={`/case-study/${study.id}`} className="inline-flex items-center text-blue-600 hover:text-blue-700">
                     En savoir plus <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </div>

@@ -9,6 +9,7 @@ import EnergyActors from './pages/EnergyActors';
 import Blog from './pages/Blog';
 import IndusTrip from './pages/IndusTrip';
 import BlogPost from './pages/BlogPost';
+import CaseStudy from './pages/CaseStudy';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/indus-trip" element={<IndusTrip />} />
+            <Route path="/case-study/:id" element={<CaseStudy />} />
           </Routes>
         </main>
         <Footer />

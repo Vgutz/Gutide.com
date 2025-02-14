@@ -21,16 +21,6 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="hidden md:flex space-x-8">
               <Link
-                to="/equipe"
-                className={`${
-                  isActive('/equipe')
-                    ? 'text-green-600 border-b-2 border-green-600'
-                    : 'text-gray-700 hover:text-green-600'
-                } px-3 py-2 text-sm font-medium`}
-              >
-                L'équipe
-              </Link>
-              <Link
                 to="/industriels"
                 className={`${
                   isActive('/industriels')
@@ -51,6 +41,16 @@ const Navbar = () => {
                 Acteurs de l'énergie
               </Link>
               <Link
+                to="/equipe"
+                className={`${
+                  isActive('/equipe')
+                    ? 'text-green-600 border-b-2 border-green-600'
+                    : 'text-gray-700 hover:text-green-600'
+                } px-3 py-2 text-sm font-medium`}
+              >
+                L'équipe
+              </Link>
+              <Link
                 to="/blog"
                 className={`${
                   isActive('/blog')
@@ -60,20 +60,14 @@ const Navbar = () => {
               >
                 Blog
               </Link>
-              <Link
-                to="/indus-trip"
-                className={`${
-                  isActive('/indus-trip')
-                    ? 'text-green-600 border-b-2 border-green-600'
-                    : 'text-gray-700 hover:text-green-600'
-                } px-3 py-2 text-sm font-medium`}
-              >
-                Indus'Trip
-              </Link>
             </div>
-            <button className="ml-8 bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-green-700 transition-colors">
-              Contactez-nous
-            </button>
+            {/* Nouveau bouton Indus'Trip remplaçant Contactez-nous */}
+            <Link
+              to="/indus-trip"
+              className="ml-8 bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-green-700 transition-colors"
+            >
+              Indus'Trip
+            </Link>
           </div>
         </div>
       </div>

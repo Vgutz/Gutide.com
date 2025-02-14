@@ -14,12 +14,22 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <Zap className="h-8 w-8 text-green-600" />
-              <span className="ml-2 text-xl font-bold text-gray-900">EnergyTrans</span>
+              <span className="ml-2 text-xl font-bold text-gray-900">Gutide</span>
             </Link>
           </div>
           
           <div className="flex items-center">
             <div className="hidden md:flex space-x-8">
+              <Link
+                to="/equipe"
+                className={`${
+                  isActive('/equipe')
+                    ? 'text-green-600 border-b-2 border-green-600'
+                    : 'text-gray-700 hover:text-green-600'
+                } px-3 py-2 text-sm font-medium`}
+              >
+                L'équipe
+              </Link>
               <Link
                 to="/industriels"
                 className={`${

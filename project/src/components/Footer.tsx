@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center">
               <Zap className="h-8 w-8 text-green-500" />
-              <span className="ml-2 text-xl font-bold">EnergyTrans</span>
+              <span className="ml-2 text-xl font-bold">Gutide</span>
             </div>
             <p className="mt-4 text-gray-400">
               Votre partenaire dans la transition énergétique et l'optimisation industrielle.
@@ -22,8 +22,16 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/industriels" className="text-gray-400 hover:text-white">Industriels</Link></li>
               <li><Link to="/acteurs-energie" className="text-gray-400 hover:text-white">Acteurs de l'énergie</Link></li>
-              <li><Link to="/blog" className="text-gray-400 hover:text-white">Blog</Link></li>
-              <li><Link to="/indus-trip" className="text-gray-400 hover:text-white">Indus'Trip</Link></li>
+              <li><Link to="/equipe" className="text-gray-400 hover:text-white">L'équipe</Link></li>
+              <li>
+                <Link 
+                  to="/indus-trip" 
+                  className="text-green-400 font-semibold hover:text-green-300 flex items-center"
+                >
+                  Indus'Trip
+                  <span className="ml-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Nouveau</span>
+                </Link>
+              </li>
             </ul>
           </div>
           
@@ -32,7 +40,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-green-500" />
-                <span className="text-gray-400">contact@energytrans.fr</span>
+                <span className="text-gray-400">contact@gutide.fr</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-green-500" />
@@ -60,7 +68,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} EnergyTrans. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} Gutide. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

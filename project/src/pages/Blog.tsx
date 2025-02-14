@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 
 const Blog = () => {
@@ -28,6 +29,18 @@ const Blog = () => {
       author: "Sophie Martin"
     }
   ];
+
+  const handleNewsletterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value;
+    
+    // Here you would typically send this to your backend or email service
+    console.log('Email submitted:', email);
+    // You can integrate with services like Mailchimp, SendGrid, etc.
+    alert('Merci pour votre inscription ! Vous recevrez bientôt nos actualités.');
+    form.reset();
+  };
 
   return (
     <div className="py-12">
@@ -62,14 +75,14 @@ const Blog = () => {
                   Découvrez les principales tendances qui façonneront le paysage énergétique en 2024 et au-delà.
                 </p>
                 <div className="mt-4">
-                  <a
-                    href="#"
+                  <Link
+                    to="/blog/featured"
                     className="inline-flex items-center text-green-600 hover:text-green-700"
                   >
                     Lire l'article <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
+                  </Link>
                 </div>
-               </div>
+              </div>
             </div>
           </div>
         </div>
@@ -96,12 +109,12 @@ const Blog = () => {
                     {post.author}
                   </div>
                 </div>
-                <a
-                  href="#"
+                <Link
+                  to={`/blog/${post.id}`}
                   className="inline-flex items-center mt-4 text-green-600 hover:text-green-700"
                 >
                   Lire plus <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
+                </Link>
               </div>
             </article>
           ))}
@@ -116,12 +129,14 @@ const Blog = () => {
             <p className="text-gray-600 mb-6">
               Inscrivez-vous à notre newsletter pour recevoir nos derniers articles et actualités
             </p>
-            <form className="max-w-md mx-auto">
+            <form className="max-w-md mx-auto" onSubmit={handleNewsletterSubmit}>
               <div className="flex gap-4">
                 <input
                   type="email"
+                  name="email"
                   placeholder="Votre email"
                   className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  required
                 />
                 <button
                   type="submit"

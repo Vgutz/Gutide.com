@@ -1,5 +1,5 @@
 import React from 'react';
-import ISO50001Image from '../Assets/ISO50001.webp'; // Import de l'image locale
+import ISO50001Image from '../assets/ISO50001.webp'; // Import de l'image locale
 
 const Reglementations = () => {
   const caseStudies = [

@@ -1,68 +1,71 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Factory, TrendingUp, Award, ArrowRight, ArrowLeft } from 'lucide-react';
+import { Factory, TrendingUp, Award, Truck } from 'lucide-react';
+
+// Import des images locales si disponibles
+import IndustrialOptimizationImage from '../assets/IndustrialOptimization.webp';
+import RenewableEnergyPPAImage from '../assets/RenewableEnergyPPA.webp';
 
 const Industrial = () => {
   const caseStudies = [
     {
       id: 1,
-      title: "Optimisation énergétique d'une usine métallurgique",
-      description: "Réduction de 30% de la consommation énergétique grâce à l'optimisation des fours.",
-      image: "https://images.unsplash.com/photo-1565715101939-b1c4c5650394?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      title: "Optimisation des procédés industriels",
+      description: "Réduction de 20% des coûts de production grâce à l'efficacité énergétique et l'automatisation.",
+      image: IndustrialOptimizationImage,
       results: [
-        "30% de réduction de la consommation énergétique",
-        "ROI atteint en moins de 18 mois",
-        "Réduction des émissions de CO2 de 1000 tonnes par an"
+        "20% d’économies sur les coûts de production",
+        "Amélioration de 15% de la productivité",
+        "Mise en conformité réglementaire facilitée"
       ],
-      fullDescription: `
-        Notre intervention auprès de cette usine métallurgique a permis d'optimiser significativement 
-        leur consommation énergétique. Le projet s'est déroulé en plusieurs phases :
-        
-        1. Audit initial et identification des points d'amélioration
-        2. Mise en place de solutions d'optimisation des fours
-        3. Installation de systèmes de récupération de chaleur
-        4. Formation des équipes aux nouvelles pratiques
-        
-        Les résultats ont dépassé les objectifs initiaux avec une réduction de 30% de la consommation 
-        énergétique et un retour sur investissement en moins de 18 mois.
-      `
+      fullDescription: (
+        <>
+          <p>Nous avons accompagné une entreprise industrielle dans la refonte de ses processus énergétiques et opérationnels :</p>
+          <ul className="list-disc pl-5">
+            <li><strong>Identification</strong> et élimination des pertes énergétiques</li>
+            <li><strong>Automatisation</strong> des systèmes de régulation de production</li>
+            <li><strong>Mise en conformité</strong> avec la norme ISO 50001</li>
+            <li><strong>Optimisation</strong> des flux logistiques internes</li>
+          </ul>
+          <p><strong>Résultat :</strong> 20% de réduction des coûts et un retour sur investissement en moins de 18 mois.</p>
+        </>
+      )
     },
     {
       id: 2,
-      title: "Modernisation d'une industrie agroalimentaire",
-      description: "Modernisation des systèmes de refroidissement avec 40% d'économies d'énergie.",
-      image: "https://images.unsplash.com/photo-1542744094-24638eff58bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      title: "Stratégie d'approvisionnement en énergies renouvelables",
+      description: "Mise en place d'un contrat PPA pour sécuriser 100% d'énergie verte à prix fixe.",
+      image: RenewableEnergyPPAImage,
       results: [
-        "40% d'économies d'énergie sur le refroidissement",
-        "Amélioration de la qualité de production",
-        "Maintenance préventive optimisée"
+        "Sécurisation de 100% d'énergie renouvelable",
+        "Réduction des coûts énergétiques sur 10 ans",
+        "Valorisation RSE et engagement climat renforcé"
       ],
-      fullDescription: `
-        La modernisation des systèmes de refroidissement de cette industrie agroalimentaire 
-        a permis d'atteindre des résultats exceptionnels. Le projet comprenait :
-        
-        1. Remplacement des anciennes installations
-        2. Mise en place d'un système de gestion intelligente
-        3. Optimisation des cycles de refroidissement
-        4. Formation du personnel aux nouvelles technologies
-        
-        Les économies d'énergie réalisées ont permis un ROI rapide tout en améliorant 
-        la qualité de la production.
-      `
+      fullDescription: (
+        <>
+          <p>Une industrie agroalimentaire a sécurisé son approvisionnement en énergie verte à travers un <strong>contrat PPA (Power Purchase Agreement)</strong> :</p>
+          <ul className="list-disc pl-5">
+            <li><strong>Analyse</strong> des besoins et consommation énergétique</li>
+            <li><strong>Sélection</strong> et négociation avec les fournisseurs d’énergie</li>
+            <li><strong>Mise en place</strong> d’un modèle de financement optimisé</li>
+            <li><strong>Suivi</strong> des KPI et impact CO₂ via un dashboard personnalisé</li>
+          </ul>
+          <p><strong>Impact business :</strong> Des économies sur 10 ans et un positionnement différenciant sur le marché.</p>
+        </>
+      )
     }
   ];
 
   return (
     <div>
-      {/* Hero Section */}
+      {/* HERO SECTION */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold mb-6">
-              Solutions pour l'industrie
+              Accélérez la transformation industrielle
             </h1>
             <p className="text-xl mb-8">
-              Optimisez votre performance énergétique et réduisez votre empreinte carbone avec nos solutions sur mesure.
+              Nous aidons les industriels à <strong>réduire leurs coûts, optimiser leur énergie et sécuriser leur production</strong> face aux nouvelles exigences du marché.
             </p>
             <button className="bg-white text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors">
               Demander un audit
@@ -71,53 +74,53 @@ const Industrial = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* OFFRES STRUCTURÉES */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-12 text-center">Nos solutions pour les industriels</h2>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-6 border rounded-lg">
               <Factory className="h-12 w-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Optimisation des processus</h3>
               <p className="text-gray-600">
-                Améliorez l'efficacité de vos processus industriels grâce à nos solutions intelligentes.
+                <strong>Améliorez l'efficacité de votre production</strong> en identifiant les goulots d'étranglement et en réduisant les gaspillages énergétiques.
               </p>
             </div>
             <div className="p-6 border rounded-lg">
               <TrendingUp className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Réduction des coûts</h3>
+              <h3 className="text-xl font-semibold mb-2">Réduction des coûts énergétiques</h3>
               <p className="text-gray-600">
-                Diminuez vos dépenses énergétiques tout en maintenant votre productivité.
+                <strong>Optimisez votre facture d’électricité</strong> en renégociant vos contrats et en adoptant des solutions de consommation intelligente.
               </p>
             </div>
             <div className="p-6 border rounded-lg">
               <Award className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Conformité réglementaire</h3>
+              <h3 className="text-xl font-semibold mb-2">Sécurisation des approvisionnements</h3>
               <p className="text-gray-600">
-                Respectez les normes environnementales et anticipez les futures réglementations.
+                <strong>Assurez votre stabilité énergétique</strong> avec des contrats long-terme et des solutions d’énergie renouvelable adaptées.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Case Studies Section */}
+      {/* CASE STUDIES */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-12 text-center">Études de cas</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Nos résultats concrets</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {caseStudies.map(study => (
               <div key={study.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <img
                   src={study.image}
                   alt={study.title}
-                  className="w-full h-48 object-cover"
+                  className="w-3/4 h-32 object-cover mx-auto"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{study.title}</h3>
                   <p className="text-gray-600 mb-4">{study.description}</p>
-                  <Link to={`/case-study/${study.id}`} className="inline-flex items-center text-blue-600 hover:text-blue-700">
-                    En savoir plus <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  <div className="text-gray-600">{study.fullDescription}</div>
                 </div>
               </div>
             ))}
@@ -125,48 +128,20 @@ const Industrial = () => {
         </div>
       </section>
 
-      {/* Case Study Detail */}
-      {caseStudies.map(study => (
-        <section key={study.id} id={`case-study-${study.id}`} className="hidden">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <Link to="/industriels" className="inline-flex items-center text-blue-600 hover:text-blue-700 mb-8">
-              <ArrowLeft className="h-5 w-5 mr-2" />
-              Retour aux études de cas
-            </Link>
-
-            <img
-              src={study.image}
-              alt={study.title}
-              className="w-full h-96 object-cover rounded-lg mb-8"
-            />
-
-            <h1 className="text-4xl font-bold mb-8">{study.title}</h1>
-
-            <div className="prose prose-lg max-w-none mb-8">
-              {study.fullDescription.split('\n').map((paragraph, index) => (
-                <p key={index} className="mb-4">{paragraph}</p>
-              ))}
-            </div>
-
-            <div className="bg-blue-50 rounded-lg p-6 mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Résultats clés</h2>
-              <ul className="space-y-2">
-                {study.results.map((result, index) => (
-                  <li key={index} className="flex items-center">
-                    <ArrowRight className="h-5 w-5 text-blue-600 mr-2" />
-                    {result}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <Link to="/industriels" className="inline-flex items-center text-blue-600 hover:text-blue-700">
-              <ArrowLeft className="h-5 w-5 mr-2" />
-              Retour aux études de cas
-            </Link>
-          </div>
-        </section>
-      ))}
+      {/* INDUS'TRIP */}
+      <section className="py-16 bg-blue-700 text-white text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Truck className="h-12 w-12 mx-auto mb-4" />
+          <h2 className="text-3xl font-bold mb-6">Indus'Trip : On vient chez vous !</h2>
+          <p className="text-lg mb-6">
+            Profitez d’une <strong>évaluation rapide et terrain</strong> de vos performances énergétiques et de votre conformité.  
+            Nos experts se déplacent directement sur votre site pour identifier les leviers d'amélioration immédiats.
+          </p>
+          <button className="bg-white text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors">
+            En savoir plus sur Indus'Trip
+          </button>
+        </div>
+      </section>
     </div>
   );
 };

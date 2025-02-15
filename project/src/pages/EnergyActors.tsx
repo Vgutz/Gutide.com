@@ -1,18 +1,19 @@
 import React from 'react';
-import { Zap, Network, BarChart3, Shield } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Zap, Network, BarChart3, Shield, Briefcase, LineChart, Target, ArrowRight } from 'lucide-react';
 
 const EnergyActors = () => {
   return (
     <div>
-      {/* Hero Section */}
+      {/* HERO SECTION */}
       <section className="bg-gradient-to-r from-purple-600 to-purple-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold mb-6">
-              Solutions pour les acteurs de l'énergie
+              Solutions sur-mesure pour les acteurs de l’énergie
             </h1>
             <p className="text-xl mb-8">
-              Accompagnement stratégique pour les fournisseurs, intégrateurs et parties prenantes du secteur énergétique.
+              <strong>Accompagnement stratégique et expertise de marché</strong> pour les fournisseurs, intégrateurs et entreprises du secteur énergétique.
             </p>
             <button className="bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors">
               Découvrir nos solutions
@@ -21,73 +22,49 @@ const EnergyActors = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* SERVICES PRINCIPAUX */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h2 className="text-3xl font-bold mb-12 text-center">Nos services pour les acteurs de l’énergie</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-6 border rounded-lg">
-              <Zap className="h-12 w-12 text-purple-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Optimisation du réseau</h3>
+              <Briefcase className="h-12 w-12 text-purple-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Stratégie & Business Model</h3>
               <p className="text-gray-600">
-                Solutions avancées pour l'optimisation et la gestion intelligente des réseaux énergétiques.
+                <strong>Identifiez de nouveaux relais de croissance</strong> et mettez en place des modèles économiques adaptés aux évolutions du marché énergétique.
               </p>
             </div>
             <div className="p-6 border rounded-lg">
-              <Network className="h-12 w-12 text-purple-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Intégration des ENR</h3>
+              <LineChart className="h-12 w-12 text-purple-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Optimisation des Marchés de l'Énergie</h3>
               <p className="text-gray-600">
-                Expertise dans l'intégration des énergies renouvelables au réseau existant.
+                <strong>Fléxibilité, ajustement et trading</strong> : développez votre expertise sur les mécanismes du marché pour améliorer vos performances.
               </p>
             </div>
             <div className="p-6 border rounded-lg">
-              <BarChart3 className="h-12 w-12 text-purple-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Analyse prédictive</h3>
+              <Target className="h-12 w-12 text-purple-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Accompagnement sur-mesure</h3>
               <p className="text-gray-600">
-                Outils d'analyse avancée pour optimiser la distribution et la consommation d'énergie.
-              </p>
-            </div>
-            <div className="p-6 border rounded-lg">
-              <Shield className="h-12 w-12 text-purple-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Sécurité énergétique</h3>
-              <p className="text-gray-600">
-                Solutions pour garantir la stabilité et la sécurité de l'approvisionnement énergétique.
+                Nous adaptons notre expertise à <strong>vos besoins spécifiques</strong> : conformité réglementaire, gestion des risques, innovations technologiques.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Partnership Section */}
-      <section className="py-16 bg-gray-50">
+      {/* CALL TO ACTION */}
+      <section className="py-16 bg-purple-700 text-white text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Nos partenaires</h2>
-            <p className="text-gray-600">
-              Nous collaborons avec les principaux acteurs du secteur énergétique
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <img
-              src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
-              alt="Partner 1"
-              className="h-20 object-contain mx-auto"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
-              alt="Partner 2"
-              className="h-20 object-contain mx-auto"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
-              alt="Partner 3"
-              className="h-20 object-contain mx-auto"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
-              alt="Partner 4"
-              className="h-20 object-contain mx-auto"
-            />
-          </div>
+          <h2 className="text-3xl font-bold mb-6">Besoin d’un accompagnement adapté à votre business ?</h2>
+          <p className="text-lg mb-6">
+            Discutons ensemble de vos enjeux et trouvons la meilleure approche pour développer votre activité énergétique.
+          </p>
+          <Link to="/contact">
+            <button className="bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors">
+              Prendre contact
+            </button>
+          </Link>
         </div>
       </section>
     </div>

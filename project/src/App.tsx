@@ -10,6 +10,10 @@ import Blog from './pages/Blog';
 import IndusTrip from './pages/IndusTrip';
 import BlogPost from './pages/BlogPost';
 import CaseStudy from './pages/CaseStudy';
+import StrategieEnergie from './pages/StrategieEnergie';
+import PerformanceIndustrielle from './pages/PerformanceIndustrielle';
+import Reglementations from './pages/Reglementations';
+import Produits from './pages/Produits';
 
 function App() {
   return (
@@ -26,6 +30,10 @@ function App() {
             <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/indus-trip" element={<IndusTrip />} />
             <Route path="/case-study/:id" element={<CaseStudy />} />
+            <Route path="/strategie-energie" element={<StrategieEnergie />} />
+            <Route path="/performance-industrielle" element={<PerformanceIndustrielle />} />
+            <Route path="/reglementations" element={<Reglementations />} />
+            <Route path="/produits" element={<Produits />} />
           </Routes>
         </main>
         <Footer />

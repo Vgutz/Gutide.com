@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Linkedin, Briefcase, Target, ShieldCheck } from 'lucide-react';
-import VGMPhoto from '../Assets/VGM.jpg'; // Import de l'image locale
+import VGMPhoto from '../assets/VGM.jpg'; // Import de l'image locale
 
 const Team = () => {
   return (

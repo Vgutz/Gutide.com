@@ -13,9 +13,15 @@ const StrategieEnergie = () => {
             <p className="text-xl mb-8">
               <strong>Optimisez vos coûts</strong>, <strong>sécurisez vos approvisionnements</strong> et <strong>renforcez votre résilience</strong> face à la volatilité des marchés.
             </p>
-            <button className="bg-white text-indigo-700 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition-colors">
+            <a 
+              href="https://calendly.com/v-gutierrez-gutide/30min" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-white text-indigo-700 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition-colors"
+              >
               <strong>Prendre rendez-vous avec un expert</strong>
-            </button>
+            </a>
+
           </div>
         </div>
       </section>
@@ -110,9 +116,14 @@ const StrategieEnergie = () => {
           <p className="text-lg mb-8">
             Réservez un échange avec nos experts et bénéficiez d’un <strong>premier diagnostic offert</strong>.
           </p>
-          <button className="bg-white text-indigo-700 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition-colors">
-            <strong>Échanger avec un expert</strong>
-          </button>
+          <a 
+              href="https://calendly.com/v-gutierrez-gutide/30min" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-white text-indigo-700 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition-colors"
+              >
+              <strong>Échanger avec un expert</strong>
+            </a>
         </div>
       </section>
     </div>

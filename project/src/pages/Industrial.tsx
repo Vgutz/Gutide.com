@@ -1,6 +1,6 @@
 import React from 'react';
 import { Factory, TrendingUp, Award, Truck } from 'lucide-react';
-
+import { Link } from "react-router-dom";
 // Import des images locales si disponibles
 import IndustrialOptimizationImage from '../assets/IndustrialOptimization.webp';
 import RenewableEnergyPPAImage from '../assets/RenewableEnergyPPA.webp';
@@ -67,9 +67,15 @@ const Industrial = () => {
             <p className="text-xl mb-8">
               Nous aidons les industriels à <strong>réduire leurs coûts, optimiser leur énergie et sécuriser leur production</strong> face aux nouvelles exigences du marché.
             </p>
-            <button className="bg-white text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors">
-              Demander un audit
-            </button>
+
+            <a 
+              href="https://calendly.com/v-gutierrez-gutide/30min" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-white text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
+              >
+              <strong>Demander un audit</strong>
+            </a>
           </div>
         </div>
       </section>
@@ -137,9 +143,12 @@ const Industrial = () => {
             Profitez d’une <strong>évaluation rapide et terrain</strong> de vos performances énergétiques et de votre conformité.  
             Nos experts se déplacent directement sur votre site pour identifier les leviers d'amélioration immédiats.
           </p>
-          <button className="bg-white text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors">
-            En savoir plus sur Indus'Trip
-          </button>
+          <Link 
+            to="/indus-trip"
+            className="bg-white text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors inline-block text-center"
+          >
+          En savoir plus sur Indus'Trip
+          </Link>
         </div>
       </section>
     </div>

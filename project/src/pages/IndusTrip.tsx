@@ -50,9 +50,14 @@ const IndusTrip = () => {
             <p className="text-xl mb-8">
               Partagez votre expérience, recevez un diagnostic énergétique gratuit
             </p>
-            <button className="bg-white text-teal-700 px-6 py-3 rounded-lg font-medium hover:bg-teal-50 transition-colors">
-              Réserver votre diagnostic maintenant !
-            </button>
+            <a 
+              href="https://calendly.com/v-gutierrez-gutide/30min" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-white text-teal-700 px-6 py-3 rounded-lg font-medium hover:bg-teal-50 transition-colors"
+              >
+              <strong>Réserver votre diagnostic maintenant !</strong>
+            </a>
           </div>
         </div>
       </section>
@@ -71,7 +76,7 @@ const IndusTrip = () => {
               <div className="bg-teal-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Calendar className="h-8 w-8 text-teal-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Planifiez</h3>
+              <h3 className="text-xl font-semibold mb-2">Planifiez une date</h3>
               <p className="text-gray-600">
                 Choisissez une date pour accueillir une visite de votre site
               </p>
@@ -80,16 +85,16 @@ const IndusTrip = () => {
               <div className="bg-teal-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-teal-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Partagez</h3>
+              <h3 className="text-xl font-semibold mb-2">Partagez votre contexte le jour J</h3>
               <p className="text-gray-600">
-                Présentez vos installations et échangez avec d'autres professionnels
+                Présentez vos installations et votre organisation
               </p>
             </div>
             <div className="text-center p-6">
               <div className="bg-teal-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Star className="h-8 w-8 text-teal-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Bénéficiez</h3>
+              <h3 className="text-xl font-semibold mb-2">Bénéficiez de recommendations</h3>
               <p className="text-gray-600">
                 Recevez un diagnostic énergétique 360° gratuit de vos installations
               </p>
@@ -101,7 +106,7 @@ const IndusTrip = () => {
       {/* Testimonial Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-12 text-center">Ils nous font confiance</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Ils ont accueilli une visite Indus'Trip :</h2>
           <div className="bg-white rounded-lg shadow-lg p-8 max-w-3xl mx-auto">
             <div className="flex items-center mb-6">
               <img
@@ -110,26 +115,26 @@ const IndusTrip = () => {
                 className="w-16 h-16 rounded-full mr-4"
               />
               <div>
-                <h3 className="text-xl font-semibold">Jean Dupont</h3>
-                <p className="text-gray-600">Directeur Industriel - Groupe ABC Industries</p>
+                <h3 className="text-xl font-semibold">Jean D.</h3>
+                <p className="text-gray-600">Directeur Industriel</p>
               </div>
             </div>
             <blockquote className="text-gray-600 italic">
-              "Grâce à Indus'Trip, nous avons non seulement pu partager notre expérience en matière d'optimisation énergétique, mais nous avons également reçu un diagnostic complet qui nous a permis d'identifier de nouvelles opportunités d'amélioration. Une expérience enrichissante pour toute notre équipe."
+              "Grâce à la visite de Vincent dans le cadre d'Indus'Trip, nous avons non seulement pu partager notre expérience en matière d'optimisation énergétique, mais nous avons également reçu un diagnostic complet qui nous a permis d'identifier de nouvelles opportunités d'amélioration. Une expérience enrichissante pour toute notre équipe."
             </blockquote>
             <div className="flex items-center mt-6">
-              <Star className="h-5 w-5 text-yellow-400" />
-              <Star className="h-5 w-5 text-yellow-400" />
-              <Star className="h-5 w-5 text-yellow-400" />
-              <Star className="h-5 w-5 text-yellow-400" />
-              <Star className="h-5 w-5 text-yellow-400" />
+              <Star className="h-5 w-5 text-yellow-400 fill-current" />
+              <Star className="h-5 w-5 text-yellow-400 fill-current" />
+              <Star className="h-5 w-5 text-yellow-400 fill-current" />
+              <Star className="h-5 w-5 text-yellow-400 fill-current" />
+              <Star className="h-5 w-5 text-yellow-400 fill-current" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Logos Section */}
-      <section className="py-16 bg-white overflow-hidden">
+      {/* <section className="py-16 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-12 text-center">Nous les avons aidé</h2>
           <div 
@@ -151,7 +156,7 @@ const IndusTrip = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section>*/}
     </div>
   );
 };

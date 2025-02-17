@@ -60,9 +60,14 @@ const Reglementations = () => {
             <p className="text-xl mb-8">
               Transformez vos obligations légales en un levier de performance et de financement.
             </p>
-            <button className="bg-white text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors">
-              Évaluer ma conformité
-            </button>
+            <a 
+              href="https://calendly.com/v-gutierrez-gutide/30min" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-white text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
+              >
+              <strong>Évaluer ma conformité</strong>
+            </a>
           </div>
         </div>
       </section>

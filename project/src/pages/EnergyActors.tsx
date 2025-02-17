@@ -15,9 +15,14 @@ const EnergyActors = () => {
             <p className="text-xl mb-8">
               <strong>Accompagnement stratégique et expertise de marché</strong> pour les fournisseurs, intégrateurs et entreprises du secteur énergétique.
             </p>
-            <button className="bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors">
-              Découvrir nos solutions
-            </button>
+            <a 
+              href="https://calendly.com/v-gutierrez-gutide/30min" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
+              >
+              <strong>Découvrir nos solutions</strong>
+            </a>
           </div>
         </div>
       </section>
@@ -60,11 +65,14 @@ const EnergyActors = () => {
           <p className="text-lg mb-6">
             Discutons ensemble de vos enjeux et trouvons la meilleure approche pour développer votre activité énergétique.
           </p>
-          <Link to="/contact">
-            <button className="bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors">
-              Prendre contact
-            </button>
-          </Link>
+          <a 
+            href="https://calendly.com/v-gutierrez-gutide/30min" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
+            >
+            <strong>Prendre contact</strong>
+          </a>
         </div>
       </section>
     </div>

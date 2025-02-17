@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Settings, Code, Rocket, CheckCircle, ArrowRight } from 'lucide-react';
+import { Settings, Code, Rocket } from 'lucide-react';
 
 const Produits = () => {
   return (
@@ -9,16 +9,19 @@ const Produits = () => {
       <section className="bg-gradient-to-r from-orange-600 to-orange-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold mb-6">
-              Nos Produits Low-Code / No-Code
-            </h1>
+            <h1 className="text-4xl font-bold mb-6">Nos Produits Low-Code / No-Code</h1>
             <p className="text-xl mb-8">
               <strong>L’efficacité industrielle et énergétique passe par des outils concrets.</strong>  
               Nous déployons des solutions <strong>Low-Code / No-Code</strong> pour <strong>automatiser, optimiser et créer de la valeur</strong> sans complexité technique.
             </p>
-            <button className="bg-white text-orange-700 px-6 py-3 rounded-lg font-medium hover:bg-orange-50 transition-colors">
-              <strong>Découvrir nos outils</strong>
-            </button>
+            <a 
+            href="https://calendly.com/v-gutierrez-gutide/30min" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-white text-orange-700 px-6 py-3 rounded-lg font-medium hover:bg-orange-50 transition-colors"
+            >
+            <strong>Découvrir nos outils</strong>
+          </a>
           </div>
         </div>
       </section>
@@ -28,8 +31,6 @@ const Produits = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-12 text-center">Nos solutions</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            {/* OPTIMISATION OPÉRATIONNELLE */}
             <div className="p-6 border rounded-lg">
               <Settings className="h-12 w-12 text-orange-600 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Optimisation Opérationnelle</h3>
@@ -38,7 +39,6 @@ const Produits = () => {
               </p>
             </div>
 
-            {/* OUTILS MÉTIER SUR-MESURE */}
             <div className="p-6 border rounded-lg">
               <Code className="h-12 w-12 text-orange-600 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Outils Métier Sur-Mesure</h3>
@@ -47,7 +47,6 @@ const Produits = () => {
               </p>
             </div>
 
-            {/* AUTOMATISATION DE LA DONNÉE */}
             <div className="p-6 border rounded-lg">
               <Rocket className="h-12 w-12 text-orange-600 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Automatisation de la Donnée</h3>
@@ -59,48 +58,40 @@ const Produits = () => {
         </div>
       </section>
 
-      {/* EXEMPLES DE RÉALISATIONS */}
-      <section className="py-16 bg-gray-50">
+    {/* EXEMPLES DE RÉALISATIONS */}
+    <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-12 text-center">Exemples d'applications déployées</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            
-            {/* OPTIMISATION DE L’AJUSTEMENT ÉNERGÉTIQUE */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1556911073-52527ac43777?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Optimisation Ajustement Énergétique"
-                className="w-full h-48 object-cover"
-              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2"><strong>Optimisation de l'Ajustement Énergétique</strong></h3>
                 <p className="text-gray-600 mb-4">
-                  Déploiement d’un outil <strong>No-Code</strong> permettant <strong>d'optimiser les offres d’ajustement</strong> pour un acteur majeur de l'énergie.
+                  <strong>Problème :</strong> Un acteur majeur de l’énergie devait optimiser ses offres d’ajustement tout en garantissant leur fiabilité.
                 </p>
-                <Link to="/case-study/ajustement" className="inline-flex items-center text-orange-600 hover:text-orange-700">
-                  Voir le projet <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                <p className="text-gray-600 mb-4">
+                  <strong>Solution :</strong> Développement et déploiement d’un outil No-Code pour automatiser et améliorer la prise de décision.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  <strong>Résultat :</strong> Optimisation des offres et amélioration de la rentabilité des ajustements énergétiques.
+                </p>
               </div>
             </div>
 
-            {/* AUTOMATISATION DU REPORTING RSE */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1556767576-5c5c43c7ad06?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Reporting RSE"
-                className="w-full h-48 object-cover"
-              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2"><strong>Automatisation du Reporting RSE</strong></h3>
                 <p className="text-gray-600 mb-4">
-                  <strong>Tableaux de bord No-Code</strong> pour un suivi <strong>automatisé des indicateurs RSE</strong> et conformité réglementaire.
+                  <strong>Problème :</strong> Difficulté à structurer et suivre les indicateurs RSE pour répondre aux obligations réglementaires.
                 </p>
-                <Link to="/case-study/reporting" className="inline-flex items-center text-orange-600 hover:text-orange-700">
-                  Voir le projet <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                <p className="text-gray-600 mb-4">
+                  <strong>Solution :</strong> Déploiement d’un tableau de bord No-Code pour centraliser et automatiser le suivi des données RSE.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  <strong>Résultat :</strong> Meilleure conformité réglementaire et valorisation des engagements environnementaux auprès des parties prenantes.
+                </p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -112,12 +103,14 @@ const Produits = () => {
           <p className="text-xl text-gray-600 mb-6">
             Nos solutions sont conçues pour <strong>améliorer votre ROI immédiatement</strong> avec des outils <strong>simples, performants et intégrés</strong>.
           </p>
-          <Link
-            to="/contact"
+          <a 
+            href="https://calendly.com/v-gutierrez-gutide/30min" 
+            target="_blank" 
+            rel="noopener noreferrer" 
             className="bg-orange-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-700 transition-colors"
-          >
+            >
             <strong>Discutons de votre besoin</strong>
-          </Link>
+          </a>
         </div>
       </section>
     </div>

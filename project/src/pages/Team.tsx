@@ -38,9 +38,6 @@ const Team = () => {
 
             {/* Contact */}
             <div className="mt-6 flex justify-center md:justify-start space-x-4">
-              <a href="mailto:contact@gutide.fr" className="text-gray-600 hover:text-green-600">
-                <Mail className="h-6 w-6" />
-              </a>
               <a href="https://www.linkedin.com/in/vincent--gutierrez/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-green-600">
                 <Linkedin className="h-6 w-6" />
               </a>
@@ -79,7 +76,10 @@ const Team = () => {
         <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
           Vous souhaitez structurer votre stratégie énergétique ou optimiser votre performance industrielle ? Parlons-en.
         </p>
-        <a href="mailto:contact@gutide.fr" className="bg-green-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors">
+        <a href="https://calendly.com/v-gutierrez-gutide/30min"               
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="bg-green-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors">
           Contactez-moi
         </a>
       </div>

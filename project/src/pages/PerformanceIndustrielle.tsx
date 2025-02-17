@@ -13,9 +13,14 @@ const PerformanceIndustrielle = () => {
             <p className="text-xl mb-8">
               <strong>Maximisez votre productivité</strong>, <strong>réduisez vos coûts</strong> et <strong>boostez votre compétitivité</strong>.
             </p>
-            <button className="bg-white text-green-700 px-6 py-3 rounded-lg font-medium hover:bg-green-50 transition-colors">
+            <a 
+              href="https://calendly.com/v-gutierrez-gutide/30min" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-white text-green-700 px-6 py-3 rounded-lg font-medium hover:bg-green-50 transition-colors"
+              >
               <strong>Parler à un expert</strong>
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -110,9 +115,14 @@ const PerformanceIndustrielle = () => {
           <p className="text-lg mb-8">
             Échangez avec nos experts pour identifier <strong>les leviers d’optimisation</strong> les plus pertinents pour votre industrie.
           </p>
-          <button className="bg-white text-green-700 px-6 py-3 rounded-lg font-medium hover:bg-green-50 transition-colors">
-            <strong>Réserver un diagnostic</strong>
-          </button>
+          <a 
+              href="https://calendly.com/v-gutierrez-gutide/30min" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-white text-green-700 px-6 py-3 rounded-lg font-medium hover:bg-green-50 transition-colors"
+              >
+              <strong>Réserver un diagnostic</strong>
+            </a>
         </div>
       </section>
     </div>
